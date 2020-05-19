@@ -35,8 +35,8 @@ public class BuildingSpawner : MonoBehaviour
     void Start()
     {
         //CITY BUILDINGS:
-
-        for (int i = -30; i <= 30; i += 5)
+        //Original loop
+        /*for (int i = -30; i <= 30; i += 5)
         {
             for (int j = -30; j <=30; j += 5)
             {
@@ -45,6 +45,18 @@ public class BuildingSpawner : MonoBehaviour
 
                 
                 
+            }
+        }*/
+        //Modified loop
+        for (int i = -10; i <= 10; i += 5)
+        {
+            for (int j = -10; j <= 10; j += 5)
+            {
+                int random = Random.Range(0, profileArray.Length);
+                Instantiate(buildingPrefab, new Vector3(i * 20, 15f, j * 20) + transform.position, Quaternion.identity, this.transform).GetComponent<DeluxeTowerBlock>().SetProfile(profileArray[random]);
+
+
+
             }
         }
 

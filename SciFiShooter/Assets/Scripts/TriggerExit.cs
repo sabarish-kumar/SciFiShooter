@@ -13,6 +13,7 @@ public class TriggerExit : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+       
         CarTag carTag = other.GetComponent<CarTag>();
         if (carTag != null)
         {

@@ -22,6 +22,7 @@ public class HoverMotor : MonoBehaviour
     void Awake()
     {
         carRigidbody = GetComponent<Rigidbody>();
+       
     }
 
     void Update()

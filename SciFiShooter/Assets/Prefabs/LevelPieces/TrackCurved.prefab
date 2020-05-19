@@ -115,6 +115,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8496,7 +8497,7 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
-  m_SelectedVertices: 13000000e300000029000000530300005a030000e50000005603000062030000820100005b03000083010000600300007f01000084010000550300005c03000081010000850100005803000061030000
+  m_SelectedVertices: 
 --- !u!64 &8909570926046647091
 MeshCollider:
   m_ObjectHideFlags: 0
